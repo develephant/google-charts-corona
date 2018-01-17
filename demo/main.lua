@@ -22,6 +22,6 @@ local function chartListener( evt )
   end
 end
 
--- Request Chart Image
+-- Request Chart Image (more demo html in the charts directory)
 chart.get("charts/bubble.html", system.ResourceDirectory, "chart.png", system.DocumentsDirectory, chartListener)
 

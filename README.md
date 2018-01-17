@@ -1,5 +1,8 @@
-# google-charts-corona
+# Goolge Charts Module
+
 Display Google Charts as static images in Corona.
+
+![chart1](imgs/chart1)
 
 
 chart.get("charts/scatter.html", nil, "chart.png", nil, chartListener)
