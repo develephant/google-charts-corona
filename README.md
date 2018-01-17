@@ -10,7 +10,7 @@ This module extracts the PNG data from a locally stored Google Charts HTML page 
 
 The ability to get an image of a chart is limited to the __corecharts__ and __geomap__ types only. For an overview of the charts supported see the _[demo/charts](demo/charts)_ directory.
 
-## Setup
+## Chart Setup
 
 You will first need to create the proper HTML page with the Google Chart you want to render.
 
