@@ -40,7 +40,7 @@ Once you have your chart HTML, you will need to add the following JavaScript lis
 //This listener is required to call Corona
 google.visualization.events.addListener(chart, 'ready', function() {
   //Return image data to Corona
-  window.location.assign("content://chart?png="+chart.getImageURI());
+  window.location = "#"+chart.getImageURI();
 });
 ```
 
@@ -169,7 +169,7 @@ Example Google Charts HTML file with added listener for Corona.
         //----------------------------------------------------------------------
         google.visualization.events.addListener(chart, 'ready', function() {
           //Return image data to Corona
-          window.location.assign("content://chart?png="+chart.getImageURI());
+          window.location = "#"+chart.getImageURI();
         });
         //----------------------------------------------------------------------
 
