@@ -1,5 +1,5 @@
 --=============================================================================
--- Google Charts Module
+-- Google Chart Module
 -- Returns a PNG from an HTML page with Google Chart API Javascript
 -- https://developers.google.com/chart/
 -- (c)2018 C. Byerley (develephant)
@@ -60,14 +60,12 @@ function chart.get( chartHtml, chartDir, destFile, destDir, listener )
   end
 
   local function webListener( event )
-    if event.type == "link" then
-      webView:stop()
-    end
 
     if event.errorCode then
       return listener({ error = event.errorMessage })
     end
-      if event.url and string.find(event.url, "content://chart") then
+      if event.url and string.find(event.url, "#data:image") then
+        webView:stop()
         webView:removeSelf()
         local b64_encoded = split(event.url, ",")[2]
         local file_path = _processPng( dest_file, dest_dir, b64_encoded )

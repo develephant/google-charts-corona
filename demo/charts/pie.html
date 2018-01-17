@@ -25,7 +25,7 @@
         //This listener is required to call Corona
         google.visualization.events.addListener(chart, 'ready', function() {
           //Return image data to Corona
-          window.location.assign("content://chart?png="+chart.getImageURI());
+          window.location = "#"+chart.getImageURI();
         });
 
         chart.draw(data, options);
