@@ -1,6 +1,6 @@
 # Google Charts Module
 
-__Display [Google Charts](https://google-developers.appspot.com/chart/) as non-interactive static images in Corona.__
+__Display [Google Charts](https://google-developers.appspot.com/chart/) as non-interactive static images in Corona using local HTML pages.__
 
 ![chart1](imgs/chart1.png)
 
