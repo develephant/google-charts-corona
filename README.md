@@ -1,8 +1,10 @@
-# Goolge Charts Module
+# Google Charts Module
 
-Display Google Charts as static images in Corona.
+__Display [Google Charts](https://google-developers.appspot.com/chart/) as static images in Corona.__
 
 ![chart1](imgs/chart1.png)
+
+_Note: This module only displays static PNGs. There is no interactivity available on the charts._
 
 
 chart.get("charts/scatter.html", nil, "chart.png", nil, chartListener)
