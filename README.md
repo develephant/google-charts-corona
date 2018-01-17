@@ -12,7 +12,13 @@ The ability to get an image of a chart is limited to the __corecharts__ and __ge
 
 ## Setup
 
-You will first need to create the proper HTML page with the Google Chart you want to render. See the [Google Charts API]() for more information on how to do that.
+You will first need to create the proper HTML page with the Google Chart you want to render.
+
+The following charts are supported:
+
+- [Area]()
+- [Bar]()
+- [Bubble]()
 
 Once you have your chart HTML, you will need to add the following JavaScript listener direcly before the `chart.draw()` method (See the examples in the _[demo/charts](demo/charts)_ directory).
 
@@ -51,7 +57,7 @@ __Parameters__
 |chart_html|The pathname of the chart HTML file that should be rendered to a PNG.|_String_|__Y__|
 |chart_dir|The Corona system directory the file resides in. If you pass `nil` for this parameter then __system.ResourceDirectory__ is used.|_Const_|__Y__|
 |dest_file|The pathname of the chart PNG that is returned from the chart HTML.|_String_|__Y__|
-|dest_dir|The Corona system directory the file resides in. If you pass `nil` for this parameter then __system.DocumentsDirectory__ is used.|_Const_|__Y__|
+|dest_dir|The Corona system directory the file should be output to. If you pass `nil` for this parameter then __system.DocumentsDirectory__ is used.|_Const_|__Y__|
 |listener|The event listener function that will recieve the PNG properties when finished downloading (see below).|_Function_|__Y__|
 
 __Listener__
