@@ -1,4 +1,4 @@
-# Google Charts Module
+# Google Charts Corona Module
 
 __Display [Google Charts](https://google-developers.appspot.com/chart/) as non-interactive static images in Corona using local HTML pages.__
 
@@ -8,13 +8,13 @@ __Display [Google Charts](https://google-developers.appspot.com/chart/) as non-i
 
 This module extracts the PNG data from a locally stored Google Charts HTML page and returns it to Corona using the Google Charts API `getImageURI()` method.
 
-The ability to get an image of a chart is limited to the __corecharts__ and __geomap__ types only. For an overview of the charts supported see the _demo/charts_ directory.
+The ability to get an image of a chart is limited to the __corecharts__ and __geomap__ types only. For an overview of the charts supported see the _[demo/charts](demo/charts)_ directory.
 
 ## Setup
 
 You will first need to create the proper HTML page with the Google Chart you want to render. See the [Google Charts API]() for more information on how to do that.
 
-Once you have your chart HTML, you will need to add the following JavaScript listener direcly before the `chart.draw()` method (See the examples in the _demo/charts_ directory).
+Once you have your chart HTML, you will need to add the following JavaScript listener direcly before the `chart.draw()` method (See the examples in the _[demo/charts](demo/charts)_ directory).
 
 ```js
 //This listener is required to call Corona
@@ -96,7 +96,28 @@ end
 chart.get("charts/donut.html", nil, "chart.png", nil, onGetChart)
 ```
 
+__Alternate `get` Request Style__
+
+You can also pass the parameters as a table. If you leave out the `chart_dir` and `dest_dir` keys, the defaults (as shown) will be assumed.
+
+```lua
+chart.get(params_table, listener)
+```
+
+__Example__
+
+```lua
+chart.get({
+  chart_file = "charts/bubble.html",
+  chart_dir = system.ResourceDirectory, --optional key
+  dest_file = "mycharts/bubble_chart.png"
+  dest_dir = system.DocumentsDirectory --optional key
+}, onGetChart)
+```
+
 __charts/donut.html__
+
+Example Google Charts HTML file with added listener for Corona.
 
 ```html
 <html>
