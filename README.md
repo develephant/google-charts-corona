@@ -14,11 +14,25 @@ The ability to get an image of a chart is limited to the __corecharts__ and __ge
 
 You will first need to create the proper HTML page with the Google Chart you want to render.
 
-The following charts are supported:
+The following charts are supported (click for documentation):
 
-- [Area]()
-- [Bar]()
-- [Bubble]()
+- [Area](https://developers.google.com/chart/interactive/docs/gallery/areachart)
+- [Bar](https://developers.google.com/chart/interactive/docs/gallery/barchart)
+- [Bubble](https://developers.google.com/chart/interactive/docs/gallery/bubblechart)
+- [Candlestick](https://developers.google.com/chart/interactive/docs/gallery/candlestickchart)
+- [Column](https://developers.google.com/chart/interactive/docs/gallery/columnchart)
+- [Combo](https://developers.google.com/chart/interactive/docs/gallery/combochart)
+- [Donut](https://developers.google.com/chart/interactive/docs/gallery/piechart#donut)
+- [Exploding Slice](https://developers.google.com/chart/interactive/docs/gallery/piechart#exploding-a-slice)
+- [Geo](https://developers.google.com/chart/interactive/docs/gallery/geochart)
+- [Histogram](https://developers.google.com/chart/interactive/docs/gallery/histogram)
+- [Line](https://developers.google.com/chart/interactive/docs/gallery/linechart)
+- [Pie](https://developers.google.com/chart/interactive/docs/gallery/piechart#overview)
+- [Pie 3D](https://developers.google.com/chart/interactive/docs/gallery/piechart#making-a-3d-pie-chart)
+- [Scatter](https://developers.google.com/chart/interactive/docs/gallery/scatterchart)
+- [Stepped Area](https://developers.google.com/chart/interactive/docs/gallery/steppedareachart)
+- [Trend Lines](https://developers.google.com/chart/interactive/docs/gallery/trendlines)
+- [Waterfall](https://developers.google.com/chart/interactive/docs/gallery/candlestickchart#Waterfall)
 
 Once you have your chart HTML, you will need to add the following JavaScript listener direcly before the `chart.draw()` method (See the examples in the _[demo/charts](demo/charts)_ directory).
 
