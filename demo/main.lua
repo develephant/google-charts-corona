@@ -23,5 +23,5 @@ local function chartListener( evt )
 end
 
 -- Request Chart Image (more demo html in the charts directory)
-chart.get("charts/waterfall.html", system.ResourceDirectory, "chart.png", system.DocumentsDirectory, chartListener)
+chart.get("charts/pie_3d.html", system.ResourceDirectory, "chart.png", system.DocumentsDirectory, chartListener)
 
