@@ -8,7 +8,7 @@ __Display [Google Charts](https://google-developers.appspot.com/chart/) as non-i
 
 This module extracts the PNG data from a locally stored Google Charts HTML page and returns it to Corona using the Google Charts API `getImageURI()` method.
 
-The ability to get an image of a chart is limited to the __corecharts__ and __geomap__ types only. For an overview of the charts supported see the _[demo/charts](demo/charts)_ directory.
+The ability to get an image of a chart is limited to the __corecharts__ and __geomap__ types only. You will also need to add a simple listener to the HTML pages.
 
 ## Chart Setup
 
@@ -34,7 +34,7 @@ The following charts are supported (click for documentation):
 - [Trend Lines](https://developers.google.com/chart/interactive/docs/gallery/trendlines)
 - [Waterfall](https://developers.google.com/chart/interactive/docs/gallery/candlestickchart#Waterfall)
 
-Once you have your chart HTML, you will need to add the following JavaScript listener direcly before the `chart.draw()` method (See the examples in the _[demo/charts](demo/charts)_ directory).
+Once you have your chart HTML, you will need to add the following JavaScript listener directly before the `chart.draw()` method (See the examples in the _[demo/charts](demo/charts)_ directory).
 
 ```js
 //This listener is required to call Corona
