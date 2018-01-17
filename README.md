@@ -2,7 +2,7 @@
 
 Display Google Charts as static images in Corona.
 
-![chart1](imgs/chart1)
+![chart1](imgs/chart1.png)
 
 
 chart.get("charts/scatter.html", nil, "chart.png", nil, chartListener)
